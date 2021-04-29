@@ -1,0 +1,15 @@
+// Fonction transparent
+
+@function transparent($valeur, $number){
+    @return transparentize($valeur, $number)
+}
+
+// fonction couleur 
+
+@function couleur($colour){
+    @if (lightness($colour) < 25% ){
+        @return lighten($colour, 20%);
+    }@else {
+        @return darken($colour, 20%);
+    }
+}

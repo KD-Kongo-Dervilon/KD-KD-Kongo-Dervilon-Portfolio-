@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> landing page 1 </title>
+    <!---Link favicon--->
+    <link rel="shortcut icon" href="src/img/Favicon.png" type="png">
+    <!--Link icon--->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!---Link css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-------------------------Header------------------------------------>
+    <header>
+        <a href="" class="logo role="banner">
+            <img src="img/Fichier 4@2x.png" alt="logo de loup hurlant ,en déssous les initiales KD signifiant Kongo Dervilon">
+        </a>
+
+        <nav role="navigation">
+            <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Tv Shows</a></li>
+                <li class="item"><a href="#">Movies</a></li>
+                <li class="item"><a href="#">Latest</a></li>
+                <li class="item"><a href="#">My list</a></li>
+            </ul>
+        </nav> 
+
+        <div class="search">
+            <label for="search"></label>
+            <input type="text" id ="search" name="q" placeholder=" caracteres entre 4 et 8" aria-label="barre de recherche" minlength="4" maxlength="8">
+            <i class='bx bx-search' aria-hidden="true"></i>
+        </div>
+
+    </header>
+
+    <div class="banner">
+        <div class="content">
+            <h2> KD Kongo Dervilon</h2>
+            <h1> Overwatch </h1>
+            <img src="" class="movieTitle" alt="">
+            <h4>
+                <span> Personnage </span>
+                <span><i> Diva </i></span>
+                <span> Tank </span>
+                <span> Diva Bombe </span>
+            </h4>
+            <p>
+                Le méca de D.Va est aussi agile que puissant : ses fusio-canons jumelés tirent en continu à courte portée, et elle peut activer ses turboréacteurs pour bondir par-dessus ennemis et obstacles, ou abattre les projectiles en plein air avec sa matrice défensive.
+            </p>
+            <div class="buttons">
+                <a href="#"><i class='bx bx-play' aria-hidden="true"></i> Jouer </a>
+                <a href="#"><i class='bx bx-plus' aria-hidden="true"></i> My list </a>
+            </div>
+        </div>
+        <a class="play"><img src="" alt=""><i class='bx bx-play-circle' ></i> Regarde le trailer </a>
+    </div>
+
+    <div class="trailer">
+        <video src="video/temps fort de rayleight_19-05-02_16-02-24.mp4" controls="true"></video>
+        <button class="close menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu" >
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+    </div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

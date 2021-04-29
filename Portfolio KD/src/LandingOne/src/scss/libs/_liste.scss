@@ -1,0 +1,21 @@
+$colors: (
+    couleur: white,
+
+);
+
+$font-size: (
+    h1 : 100px,
+    h2 : 50px,
+);
+
+@each $name, $color in $colors {
+    .#{$name} {
+        color: $color;
+    } 
+}
+
+@each $tag, $size in $font-size {
+    #{$tag} {
+        font-size: $size;
+    } 
+}

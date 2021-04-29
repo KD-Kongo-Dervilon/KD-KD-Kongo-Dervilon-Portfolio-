@@ -1,0 +1,32 @@
+
+@mixin flexMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexSpace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+// mixins parametre 
+@mixin absolute($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin media($size){
+	@media screen and (max-width: $size) {
+		@content;
+	}
+}
